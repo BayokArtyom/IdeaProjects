@@ -2,9 +2,9 @@ package com.bayok.task1.figures;
 
 public class Plane {
 
-    public Point pointA;
-    public Point pointB;
-    public Point pointC;
+    private Point pointA;
+    private Point pointB;
+    private Point pointC;
 
     public void Plane(Point pointA, Point pointB, Point pointC) {
         this.pointA = pointA;
@@ -13,26 +13,26 @@ public class Plane {
     }
 
 
-    public Point getPointA() {
+    private Point getPointA() {
         return pointA;
     }
-    public void setPointA(Point pointA) {
+    private void setPointA(Point pointA) {
         this.pointA = pointA;
     }
-    public Point getPointB() {
+    private Point getPointB() {
         return pointB;
     }
-    public void setPointB(Point pointB) {
+    private void setPointB(Point pointB) {
         this.pointB = pointB;
     }
-    public Point getPointC() {
+    private Point getPointC() {
         return pointC;
     }
-    public void setPointC(Point pointC) {
+    private void setPointC(Point pointC) {
         this.pointC = pointC;
     }
     @Override
-    public String toString() {
+    private String toString() {
         return "(" + pointA + ", " + pointB + ", " + pointC +")";
     }
 
