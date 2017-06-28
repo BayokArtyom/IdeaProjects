@@ -31,4 +31,9 @@ public class Plane {
     public void setPointC(Point pointC) {
         this.pointC = pointC;
     }
+    @Override
+    public String toString() {
+        return "(" + pointA + ", " + pointB + ", " + pointC +")";
+    }
+
 }

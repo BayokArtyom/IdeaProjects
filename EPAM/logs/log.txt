@@ -1,0 +1,66 @@
+2017-06-27 23:06:50 [main] ERROR com.bayok.task1.file.DataParser - Not a number or wrong count of parameters provided at row 2: [-1, 2, 3, 54, 4, 5, -6, -7, -4 0] value of '-4 0'
+2017-06-27 23:06:50 [main] ERROR com.bayok.task1.file.DataParser - Not a number or wrong count of parameters provided at row 3: [1, qwe, 3, 4, 5, 6, 7, 8, 9 ] value of 'qwe'
+2017-06-27 23:06:50 [main] ERROR com.bayok.task1.file.DataParser - Not a number or wrong count of parameters provided at row 4: [22, 22, 234, 234, 33, 11, 324, 124, 56 ] value of '56 '
+2017-06-27 23:06:50 [main] ERROR com.bayok.task1.file.DataParser - Invalid count of parameters provided at row 5: [321, 123, 1] Please ensure that there are 9 parameters passed
+2017-06-27 23:06:50 [main] ERROR com.bayok.task1.file.DataParser - Not a number or wrong count of parameters provided at row 6: [, , , ] value of ''
+2017-06-27 23:06:50 [main] ERROR com.bayok.task1.file.DataParser - Not a number or wrong count of parameters provided at row 7: [, 1, ] value of ''
+2017-06-27 23:06:50 [main] ERROR com.bayok.task1.file.DataParser - Invalid count of parameters provided at row 8: [1111] Please ensure that there are 9 parameters passed
+2017-06-27 23:06:50 [main] ERROR com.bayok.task1.file.DataParser - Not a number or wrong count of parameters provided at row 9: [1, 2, 3, 4, 5, 6, 7, 8, 9 0 1 2 3] value of '9 0 1 2 3'
+2017-06-27 23:06:50 [main] ERROR com.bayok.task1.file.DataParser - Invalid count of parameters provided at row 10: [13] Please ensure that there are 9 parameters passed
+2017-06-27 23:06:50 [main] ERROR com.bayok.task1.file.DataParser - Not a number or wrong count of parameters provided at row 11: [1, 2, 3, 4, 5, 6, 7, 8, 999999999999999999999999999999999] value of '999999999999999999999999999999999'
+2017-06-27 23:09:55 [main] ERROR com.bayok.task1.file.DataParser - Not a number or wrong count of parameters provided at row 2: [-1, 2, 3, 54, 4, 5, -6, -7, -4 0] value of '-4 0'
+2017-06-27 23:09:55 [main] ERROR com.bayok.task1.file.DataParser - Not a number or wrong count of parameters provided at row 3: [1, qwe, 3, 4, 5, 6, 7, 8, 9 ] value of 'qwe'
+2017-06-27 23:09:55 [main] ERROR com.bayok.task1.file.DataParser - Not a number or wrong count of parameters provided at row 4: [22, 22, 234, 234, 33, 11, 324, 124, 56 ] value of '56 '
+2017-06-27 23:09:55 [main] ERROR com.bayok.task1.file.DataParser - Invalid count of parameters provided at row 5: [321, 123, 1] Please ensure that there are 9 parameters passed
+2017-06-27 23:09:55 [main] ERROR com.bayok.task1.file.DataParser - Not a number or wrong count of parameters provided at row 6: [, , , ] value of ''
+2017-06-27 23:09:55 [main] ERROR com.bayok.task1.file.DataParser - Not a number or wrong count of parameters provided at row 7: [, 1, ] value of ''
+2017-06-27 23:09:55 [main] ERROR com.bayok.task1.file.DataParser - Invalid count of parameters provided at row 8: [1111] Please ensure that there are 9 parameters passed
+2017-06-27 23:09:55 [main] ERROR com.bayok.task1.file.DataParser - Not a number or wrong count of parameters provided at row 9: [1, 2, 3, 4, 5, 6, 7, 8, 9 0 1 2 3] value of '9 0 1 2 3'
+2017-06-27 23:09:55 [main] ERROR com.bayok.task1.file.DataParser - Invalid count of parameters provided at row 10: [13] Please ensure that there are 9 parameters passed
+2017-06-27 23:09:55 [main] ERROR com.bayok.task1.file.DataParser - Not a number or wrong count of parameters provided at row 11: [1, 2, 3, 4, 5, 6, 7, 8, 999999999999999999999999999999999] value of '999999999999999999999999999999999'
+2017-06-27 23:10:40 [main] ERROR com.bayok.task1.file.DataParser - Not a number or wrong count of parameters provided at row 2: [-1, 2, 3, 54, 4, 5, -6, -7, -4 0] value of '-4 0'
+2017-06-27 23:10:40 [main] ERROR com.bayok.task1.file.DataParser - Not a number or wrong count of parameters provided at row 3: [1, qwe, 3, 4, 5, 6, 7, 8, 9 ] value of 'qwe'
+2017-06-27 23:10:40 [main] ERROR com.bayok.task1.file.DataParser - Not a number or wrong count of parameters provided at row 4: [22, 22, 234, 234, 33, 11, 324, 124, 56 ] value of '56 '
+2017-06-27 23:10:40 [main] ERROR com.bayok.task1.file.DataParser - Invalid count of parameters provided at row 5: [321, 123, 1] Please ensure that there are 9 parameters passed
+2017-06-27 23:10:40 [main] ERROR com.bayok.task1.file.DataParser - Not a number or wrong count of parameters provided at row 6: [, , , ] value of ''
+2017-06-27 23:10:40 [main] ERROR com.bayok.task1.file.DataParser - Not a number or wrong count of parameters provided at row 7: [, 1, ] value of ''
+2017-06-27 23:10:40 [main] ERROR com.bayok.task1.file.DataParser - Invalid count of parameters provided at row 8: [1111] Please ensure that there are 9 parameters passed
+2017-06-27 23:10:40 [main] ERROR com.bayok.task1.file.DataParser - Not a number or wrong count of parameters provided at row 9: [1, 2, 3, 4, 5, 6, 7, 8, 9 0 1 2 3] value of '9 0 1 2 3'
+2017-06-27 23:10:40 [main] ERROR com.bayok.task1.file.DataParser - Invalid count of parameters provided at row 10: [13] Please ensure that there are 9 parameters passed
+2017-06-27 23:10:40 [main] ERROR com.bayok.task1.file.DataParser - Not a number or wrong count of parameters provided at row 11: [1, 2, 3, 4, 5, 6, 7, 8, 999999999999999999999999999999999] value of '999999999999999999999999999999999'
+2017-06-27 23:49:50 [main] ERROR com.bayok.task1.file.DataParser - Not a number or wrong count of parameters provided at row 2: [-1, 2, 3, 54, 4, 5, -6, -7, -4 0] value of '-4 0'
+2017-06-27 23:49:50 [main] ERROR com.bayok.task1.file.DataParser - Not a number or wrong count of parameters provided at row 3: [1, qwe, 3, 4, 5, 6, 7, 8, 9 ] value of 'qwe'
+2017-06-27 23:49:50 [main] ERROR com.bayok.task1.file.DataParser - Not a number or wrong count of parameters provided at row 4: [22, 22, 234, 234, 33, 11, 324, 124, 56 ] value of '56 '
+2017-06-27 23:49:50 [main] ERROR com.bayok.task1.file.DataParser - Invalid count of parameters provided at row 5: [321, 123, 1] Please ensure that there are 9 parameters passed
+2017-06-27 23:49:50 [main] ERROR com.bayok.task1.file.DataParser - Not a number or wrong count of parameters provided at row 6: [, , , ] value of ''
+2017-06-27 23:49:50 [main] ERROR com.bayok.task1.file.DataParser - Not a number or wrong count of parameters provided at row 7: [, 1, ] value of ''
+2017-06-27 23:49:50 [main] ERROR com.bayok.task1.file.DataParser - Invalid count of parameters provided at row 8: [1111] Please ensure that there are 9 parameters passed
+2017-06-27 23:49:50 [main] ERROR com.bayok.task1.file.DataParser - Not a number or wrong count of parameters provided at row 9: [1, 2, 3, 4, 5, 6, 7, 8, 9 0 1 2 3] value of '9 0 1 2 3'
+2017-06-27 23:49:50 [main] ERROR com.bayok.task1.file.DataParser - Invalid count of parameters provided at row 10: [13] Please ensure that there are 9 parameters passed
+2017-06-27 23:49:50 [main] ERROR com.bayok.task1.file.DataParser - Not a number or wrong count of parameters provided at row 11: [1, 2, 3, 4, 5, 6, 7, 8, 999999999999999999999999999999999] value of '999999999999999999999999999999999'
+2017-06-27 23:54:53 [main] ERROR com.bayok.task1.file.DataParser - Not a number or wrong count of parameters provided at row 2: [-1, 2, 3, 54, 4, 5, -6, -7, -4 0] value of '-4 0'
+2017-06-27 23:54:53 [main] ERROR com.bayok.task1.file.DataParser - Not a number or wrong count of parameters provided at row 3: [1, qwe, 3, 4, 5, 6, 7, 8, 9 ] value of 'qwe'
+2017-06-27 23:54:53 [main] ERROR com.bayok.task1.file.DataParser - Not a number or wrong count of parameters provided at row 4: [22, 22, 234, 234, 33, 11, 324, 124, 56 ] value of '56 '
+2017-06-27 23:54:53 [main] ERROR com.bayok.task1.file.DataParser - Invalid count of parameters provided at row 5: [321, 123, 1] Please ensure that there are 9 parameters passed
+2017-06-27 23:54:53 [main] ERROR com.bayok.task1.file.DataParser - Not a number or wrong count of parameters provided at row 6: [, , , ] value of ''
+2017-06-27 23:54:53 [main] ERROR com.bayok.task1.file.DataParser - Not a number or wrong count of parameters provided at row 7: [, 1, ] value of ''
+2017-06-27 23:54:53 [main] ERROR com.bayok.task1.file.DataParser - Invalid count of parameters provided at row 8: [1111] Please ensure that there are 9 parameters passed
+2017-06-27 23:54:53 [main] ERROR com.bayok.task1.file.DataParser - Not a number or wrong count of parameters provided at row 9: [1, 2, 3, 4, 5, 6, 7, 8, 9 0 1 2 3] value of '9 0 1 2 3'
+2017-06-27 23:54:53 [main] ERROR com.bayok.task1.file.DataParser - Invalid count of parameters provided at row 10: [13] Please ensure that there are 9 parameters passed
+2017-06-27 23:54:53 [main] ERROR com.bayok.task1.file.DataParser - Not a number or wrong count of parameters provided at row 11: [1, 2, 3, 4, 5, 6, 7, 8, 999999999999999999999999999999999] value of '999999999999999999999999999999999'
+2017-06-27 23:54:53 [main] ERROR com.bayok.task1.Main - 0
+2017-06-27 23:54:53 [main] ERROR com.bayok.task1.Main - 0
+2017-06-27 23:54:53 [main] ERROR com.bayok.task1.Main - 7
+2017-06-27 23:59:01 [main] ERROR com.bayok.task1.file.DataParser - Not a number or wrong count of parameters provided at row 2: [-1, 2, 3, 54, 4, 5, -6, -7, -4 0] value of '-4 0'
+2017-06-27 23:59:01 [main] ERROR com.bayok.task1.file.DataParser - Not a number or wrong count of parameters provided at row 3: [1, qwe, 3, 4, 5, 6, 7, 8, 9 ] value of 'qwe'
+2017-06-27 23:59:01 [main] ERROR com.bayok.task1.file.DataParser - Not a number or wrong count of parameters provided at row 4: [22, 22, 234, 234, 33, 11, 324, 124, 56 ] value of '56 '
+2017-06-27 23:59:01 [main] ERROR com.bayok.task1.file.DataParser - Invalid count of parameters provided at row 5: [321, 123, 1] Please ensure that there are 9 parameters passed
+2017-06-27 23:59:01 [main] ERROR com.bayok.task1.file.DataParser - Not a number or wrong count of parameters provided at row 6: [, , , ] value of ''
+2017-06-27 23:59:01 [main] ERROR com.bayok.task1.file.DataParser - Not a number or wrong count of parameters provided at row 7: [, 1, ] value of ''
+2017-06-27 23:59:01 [main] ERROR com.bayok.task1.file.DataParser - Invalid count of parameters provided at row 8: [1111] Please ensure that there are 9 parameters passed
+2017-06-27 23:59:01 [main] ERROR com.bayok.task1.file.DataParser - Not a number or wrong count of parameters provided at row 9: [1, 2, 3, 4, 5, 6, 7, 8, 9 0 1 2 3] value of '9 0 1 2 3'
+2017-06-27 23:59:01 [main] ERROR com.bayok.task1.file.DataParser - Invalid count of parameters provided at row 10: [13] Please ensure that there are 9 parameters passed
+2017-06-27 23:59:01 [main] ERROR com.bayok.task1.file.DataParser - Not a number or wrong count of parameters provided at row 11: [1, 2, 3, 4, 5, 6, 7, 8, 999999999999999999999999999999999] value of '999999999999999999999999999999999'
+2017-06-27 23:59:01 [main] INFO  com.bayok.task1.Main - Angle is: 0%
+2017-06-27 23:59:01 [main] INFO  com.bayok.task1.Main - Angle is: 0%
+2017-06-27 23:59:01 [main] INFO  com.bayok.task1.Main - Angle is: 7%

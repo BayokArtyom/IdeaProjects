@@ -1,8 +1,14 @@
 package com.bayok.task1.exceptions;
 
+
+
 public class FileIsMissingException  extends Exception{
-    public FileIsMissingException(String FILENAME)
+
+
+
+    public FileIsMissingException(String msg)
     {
-        super("File was not found or invalid directory provided: "+ FILENAME);
+       super(msg);
     }
+
 }

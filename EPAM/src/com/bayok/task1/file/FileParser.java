@@ -1,8 +1,10 @@
 package com.bayok.task1.file;
 
 import com.bayok.task1.exceptions.FileIsMissingException;
-//import org.apache.logging.log4j.LogManager;
-//import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.Level;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+
 import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileReader;
@@ -11,34 +13,36 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class FileParser {
+    private static final Logger LOGGER = LogManager.getLogger();
+    public List<String> readFile(String fileName)  throws FileIsMissingException {
 
-    //private static final Logger LOGGER = LogManager.getLogger();
-    private static final String FILENAME = "./src/com/bayok/task1/file/input.txt";
-    private static List<String> aLine;
-
-    public static void readFile()  throws FileIsMissingException {
-        File f = new File(FILENAME);
-        if (f.exists() && !f.isDirectory()&& f.isFile()) {
-            try (BufferedReader br = new BufferedReader(new FileReader(FILENAME))) {
-                aLine = new ArrayList<>();
+        List<String> listOfLines = null;
+        File f = new File(fileName);
+        if (f.exists() &&  f.isFile()) {
+            BufferedReader br = null;
+            try {
+                br = new BufferedReader(new FileReader(fileName));
+                listOfLines = new ArrayList<>();
                 String currentLine;
                 while ((currentLine = br.readLine()) != null) {
-                    aLine.add(currentLine);
+                    listOfLines.add(currentLine);
                 }
-                br.close();
             }
             catch (IOException e) {
-                e.printStackTrace();
+                LOGGER.fatal("Error during file read");
+
             }
-            //finally {
-           //     br.close();
-           // }
+            finally {
+                try {
+                    br.close();
+                } catch (IOException e) {
+                    LOGGER.log(Level.ERROR,"Cannot close buffered reader");
+                }
+            }
         }
         else  {
-            throw new FileIsMissingException(FILENAME);
+            throw new FileIsMissingException(fileName);
         }
-    }
-    public static List<String> getList() {
-        return aLine;
+        return listOfLines;
     }
 }

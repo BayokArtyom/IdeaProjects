@@ -2,81 +2,78 @@ package com.bayok.task1.file;
 
 import com.bayok.task1.figures.Plane;
 import com.bayok.task1.figures.Point;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
 public class DataParser {
 
-    public static int checkIfInt;
-    private static int currentRow = 0;
-    private static boolean isCorrectRow;
-    private static final int EXPEXTEDPARAMETERCOUNT = 9;
-    private static String[] currentArray = new String[8];
+    private static final int EXPECTED_PARAMETER_COUNT = 9;
+    private static final Logger LOGGER = LogManager.getLogger();
 
-    public static void parseArray(){
-        FileParser fp = new FileParser();
-        List<String> list = fp.getList();
-        System.out.println(list);
+    public static List<Plane> parseArray(List<String> listOfLines) {
 
+        List<Plane> listOfPlanes = new ArrayList<Plane>();
+        String[] currentArray = new String[8];
+        boolean isCorrectRow;
+        int currentRow = 0;
+        int currentParameterNumber;
 
-        for (String s : list) {
-            System.out.println("-------------------");
+        for (String s : listOfLines) {
             currentRow ++;
             isCorrectRow = true;
+            currentParameterNumber = 0;
             try {
-                currentArray = s.split(" ",9);
+                currentArray = s.split("\\s",9);
             }
             catch (Exception e){
-                System.out.println("Split failed at " + currentRow + ": " + Arrays.toString(currentArray));
+                LOGGER.error("Split failed at " + currentRow + ": " + Arrays.toString(currentArray));
                 isCorrectRow = false;
-                e.printStackTrace();
-            }
 
-            System.out.println(Arrays.toString(currentArray));
-            int i = 0;
-            while (i<EXPEXTEDPARAMETERCOUNT){
+            }
+            while (currentParameterNumber<EXPECTED_PARAMETER_COUNT){
                 try {
-                    checkIfInt = Integer.parseInt(currentArray[i]);
+                    Integer.parseInt(currentArray[currentParameterNumber]);
                 }
                 catch(NumberFormatException nx){
-                    System.out.println( "Not a number or wrong count of parameters provided at row "
+                    LOGGER.error( "Not a number or wrong count of parameters provided at row "
                             + currentRow + ": " + Arrays.toString(currentArray)
-                            + " value of '" + currentArray[i] + "'");
+                            + " value of '" + currentArray[currentParameterNumber] + "'");
                     isCorrectRow = false;
                     break;
-
                 }
                 catch(ArrayIndexOutOfBoundsException ax){
-                    System.out.println( "Invalid count of parameters provided at row "
+                    LOGGER.error( "Invalid count of parameters provided at row "
                             + currentRow + ": " + Arrays.toString(currentArray)
                             + " Please ensure that there are 9 parameters passed");
                     isCorrectRow = false;
                     break;
                 }
-                i++;
+                currentParameterNumber++;
             }
-            Point point1 = new Point();
-            Point point2 = new Point();
-            Point point3 = new Point();
-            Plane plane = new Plane();
             if (isCorrectRow){
-                point1.setX(Integer.parseInt(currentArray[0]));
-                point1.setY(Integer.parseInt(currentArray[1]));
-                point1.setZ(Integer.parseInt(currentArray[2]));
-                plane.setPointA(point1);
-                point2.setX(Integer.parseInt(currentArray[3]));
-                point2.setY(Integer.parseInt(currentArray[4]));
-                point2.setZ(Integer.parseInt(currentArray[5]));
-                plane.setPointB(point2);
-                point3.setX(Integer.parseInt(currentArray[6]));
-                point3.setY(Integer.parseInt(currentArray[7]));
-                point3.setZ(Integer.parseInt(currentArray[8]));
-                plane.setPointC(point3);
-                System.out.println(plane.getPointA());
-                System.out.println(plane.getPointB());
-                System.out.println(plane.getPointC());
+                Point pointA = new Point();
+                Point pointB = new Point();
+                Point pointC = new Point();
+                Plane plane = new Plane();
+                pointA.setX(Integer.parseInt(currentArray[0]));
+                pointA.setY(Integer.parseInt(currentArray[1]));
+                pointA.setZ(Integer.parseInt(currentArray[2]));
+                plane.setPointA(pointA);
+                pointB.setX(Integer.parseInt(currentArray[3]));
+                pointB.setY(Integer.parseInt(currentArray[4]));
+                pointB.setZ(Integer.parseInt(currentArray[5]));
+                plane.setPointB(pointB);
+                pointC.setX(Integer.parseInt(currentArray[6]));
+                pointC.setY(Integer.parseInt(currentArray[7]));
+                pointC.setZ(Integer.parseInt(currentArray[8]));
+                plane.setPointC(pointC);
+                listOfPlanes.add(plane);
             }
         }
+        return listOfPlanes;
     }
 }
